@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>My Team Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            position: relative;
+        }
+        
+        .container {
+            position: relative;
+        }
+        
+        .header .team-title,
+        .card .job {
+            font-family: 'PT Serif', serif;
+        }
+        
+        .header .team-title,
+        .card .name {
+            font-weight: bold;
+        }
+        
+        header .team-description,
+        .card .name {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .header .team-title {
+            font-size: 36px;
+        }
+        
+        .team-description h3,
+        .card .job {
+            text-transform: uppercase;
+        }
+        
+        header .team-description {
+            margin-top: 40px;
+        }
+        
+        header .team-description p {
+            margin-top: 10px;
+        }
+        
+        .card {
+            position: relative;
+            max-width: 250px;
+        }
+        
+        .card img {
+            width: 100%;
+        }
+        
+        .card .job {
+            position: absolute;
+            top: 70px;
+            width: 150px;
+            right: -95px;
+            transform: rotate(90deg);
+        }
+        
+        .my-name {
+            font-family: 'Montserrat', sans-serif;
+            color: #A9A9A9;
+            font-weight: 600;
+            font-size: 14px;
+            position: absolute;
+            bottom: 1%;
+            width: 100%;
+            text-align: center;
+        }
+        
+        @media (min-width: 940px) {
+            body {
+                padding: 100px 0;
+            }
+            .container {
+                margin: 0 170px;
+            }
+            header .team-description {
+                max-width: 350px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            body {
+                padding: 80px 0;
+            }
+            .container {
+                margin: 0 100px;
+            }
+            header {
+                display: flex;
+            }
+            header .team-title {
+                width: 50%;
+            }
+            header .team-description {
+                width: 50%;
+                margin-top: 0;
+            }
+            header .team-description p {
+                font-size: 18px;
+                line-height: 27px;
+            }
+            .wrapper {
+                margin-top: 90px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-column-gap: 60px;
+                grid-row-gap: 60px;
+            }
+            .card {
+                max-width: 250px;
+            }
+            .card:nth-child(2),
+            .card:nth-child(5) {
+                margin-top: 30%;
+            }
+            .card .name {
+                margin-top: 12px;
+                font-weight: 600;
+                font-size: 18px;
+            }
+            .card .job {
+                font-size: 12px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            body {
+                padding: 20px 20px 70px;
+            }
+            header .team-description p,
+            .card .name {
+                font-size: 14px;
+                line-height: 21px;
+            }
+            .wrapper {
+                margin-top: 50px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 50px;
+                grid-row-gap: 30px;
+            }
+            .card:nth-child(2n) {
+                margin-top: 30%;
+            }
+            .card .job {
+                font-size: 10px;
+                right: -87px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="team-title">The creative crew</h1>
+            <div class="team-description">
+                <h3>Who we are</h3>
+                <p>We are team of creatively diverse. driven. innovative individuals working in various locations from the world.</p>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="card">
+                <img src="./images/photo1.png" alt="photo1">
+                <p class="name">Bill Mahoney</p>
+                <div class="job">Product owner</div>
+            </div>
+            <div class="card card-even">
+                <img src="./images/photo2.png" alt="photo2">
+                <p class="name">Saba Cabrera</p>
+                <div class="job">Art director</div>
+            </div>
+            <div class="card">
+                <img src="./images/photo3.png" alt="photo3">
+                <p class="name">Shae Le</p>
+                <div class="job">Tech Lead</div>
+            </div>
+            <div class="card">
+                <img src="./images/photo4.png" alt="photo4">
+                <p class="name">Skylah Lu</p>
+                <div class="job">UX Designer</div>
+            </div>
+            <div class="card card-even">
+                <img src="./images/photo5.png" alt="photo5">
+                <p class="name">Griff Richards</p>
+                <div class="job">Developer</div>
+            </div>
+            <div class="card">
+                <img src="./images/photo6.png" alt="photo6">
+                <p class="name">Stan John</p>
+                <div class="job">Deverloper</div>
+            </div>
+        </div>
+    </div>
+    <div class="my-name">Linh Nguyen @ DevChallenges.io</div>
+</body>
+
+</html>
